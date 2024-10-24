@@ -1,12 +1,7 @@
 services:
-  aspnet-webnet:
+  aspnet-webnet_hallo_asp:
     build:
       context: ..
       dockerfile: ./docker/Dockerfile
     ports:
-      - "8080:8080"
-    networks:
-      - webnet
-
-networks:
-  webnet:
+      - "8090:8080"
